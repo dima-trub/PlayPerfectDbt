@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Source data for raw game events"
+    database: playperfect-431512
+    schema: raw_data
+
+    tables:
+      - name: raw_data
+        description: "Raw game event data collected from various sources."
+        columns:
+          - name: event_id
+            description: "Unique identifier for each game event."
+          - name: user_id
+            description: "Unique identifier for each user."
+          - name: event_type
+            description: "Type of event (e.g., login, purchase, game_start)."
+          - name: event_timestamp
+            description: "Timestamp when the event occurred."
+          - name: game_id
+            description: "Identifier for the specific game related to the event."
+          - name: additional_data
+            description: "JSON field for any additional data related to the event."
