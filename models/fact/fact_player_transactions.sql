@@ -1,3 +1,6 @@
+{{config(schema='dwh')}}
+
+
 {{
     config(        
         materialized='incremental',

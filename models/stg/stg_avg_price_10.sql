@@ -1,4 +1,6 @@
 
+{{config(schema='stg')}}
+
 WITH deposits_pop AS (
     SELECT
       player_id,

@@ -1,3 +1,5 @@
+{{config(schema='stg')}}
+
 WITH increment AS (
 
   {{ get_increment_column('dbt_dimatrub', 'fact_player_transactions','timestamp_utc') }}

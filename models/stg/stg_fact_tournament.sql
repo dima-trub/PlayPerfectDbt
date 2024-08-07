@@ -1,3 +1,4 @@
+{{config(schema='stg')}}
 
 WITH increment AS (
 
