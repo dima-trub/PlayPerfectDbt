@@ -1,5 +1,3 @@
-version: 2
-
 sources:
   - name: raw_data
     description: "Source data for raw game events"
@@ -12,8 +10,12 @@ sources:
         columns:
           - name: event_id
             description: "Unique identifier for each game event."
+            tests:              
+              - not_null
           - name: user_id
             description: "Unique identifier for each user."
+            tests:              
+              - not_null
           - name: event_type
             description: "Type of event (e.g., login, purchase, game_start)."
           - name: event_timestamp
