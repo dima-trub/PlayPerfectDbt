@@ -36,7 +36,19 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  PlayPerfect:
-    # Applies to all files under models/example/
-    example:
+  play_perfect:
+
+    # Applies to all files under models/stg/
+    fact:      
       +materialized: table
+      +schema: dwh
+
+    dim:      
+      +materialized: table
+      +schema: dwh 
+      
+    staging:
+      +materialized: table
+      +schema: stg
+    
+    
