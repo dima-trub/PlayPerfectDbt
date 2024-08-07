@@ -1,3 +1,5 @@
+{{config(schema='stg')}}
+
 WITH daily_matches AS (
     SELECT
         player_id,

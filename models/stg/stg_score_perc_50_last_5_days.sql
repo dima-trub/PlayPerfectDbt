@@ -1,3 +1,5 @@
+{{config(schema='stg')}}
+
 WITH recent_scores AS (
     SELECT 
         player_id, 

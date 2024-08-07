@@ -1,3 +1,5 @@
+{{config(schema='stg')}}
+
 with raw_data as 
 (
   SELECT *

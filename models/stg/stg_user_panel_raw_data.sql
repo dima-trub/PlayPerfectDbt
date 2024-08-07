@@ -1,3 +1,4 @@
+{{config(schema='stg')}}
 
 WITH increment AS (
   {{ get_increment_column('dbt_dimatrub', 'fact_user_panel','player_last_seen_time') }}
